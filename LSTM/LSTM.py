@@ -49,7 +49,7 @@ class LSTM(Module):
                                    [LSTMCell(hidden_size, hidden_size) for _ in range(n_layers - 1)])
         
     def forward(self, x: torch.Tensor, state: Optional[Tuple[torch.Tensor, torch.Tensor]] = None):
-
+        # x has shape [n_steps, batch_size, input_size]
         n_steps, batch_size = x.shape[:2]
         
         if state is None:
