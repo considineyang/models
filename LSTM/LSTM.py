@@ -12,7 +12,7 @@ class LSTMCell(Module):
         super().__init__()
 
         self.hidden_lin = nn.Linear(hidden_size, 4 * hidden_size)
-        self.input_lin = nn.Linear(input_size, 4 * input_size, bias=False)
+        self.input_lin = nn.Linear(input_size, 4 * hidden_size, bias=False)
 
         if layer_norm:
             self.layer_norm = nn.ModuleList([nn.LayerNorm(hidden_size) for _ in range(4)])
@@ -58,7 +58,7 @@ class LSTM(Module):
         else:
             (h, c) = state
 
-            h, c = list(torch.unbind(h), list(torch.unbind(c)))
+            h, c = list(torch.unbind(h)), list(torch.unbind(c))
 
             out = []
 
