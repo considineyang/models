@@ -1,0 +1,54 @@
+indicators:
+  accuracy.train:
+    class_name: Scalar
+    is_print: true
+    name: accuracy.train
+  loss.train:
+    class_name: Scalar
+    is_print: true
+    name: loss.train
+  sampled:
+    class_name: Text
+    is_print: false
+    name: sampled
+wildcards:
+  '*':
+    class_name: Scalar
+    is_print: true
+    name: '*'
+  accuracy.*:
+    class_name: Scalar
+    is_print: true
+    name: accuracy.*
+  grad.*:
+    class_name: Scalar
+    is_print: false
+    name: grad.*
+  hp.*:
+    class_name: Scalar
+    is_print: false
+    name: hp.*
+  loss.*:
+    class_name: Scalar
+    is_print: true
+    name: loss.*
+  module.*:
+    class_name: Scalar
+    is_print: false
+    name: module.*
+  optim.*:
+    class_name: Scalar
+    is_print: false
+    name: optim.*
+  param.*:
+    class_name: Scalar
+    is_print: false
+    name: param.*
+  sampled:
+    class_name: Text
+    is_print: false
+    name: sampled
+  time.*:
+    class_name: Scalar
+    is_print: false
+    name: time.*

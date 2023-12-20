@@ -1,0 +1,961 @@
+accuracy:
+  computed: labml_helpers.metrics.accuracy.Accuracy
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: accuracy
+  options: []
+  order: 8
+  type: <class 'labml_helpers.metrics.accuracy.Accuracy'>
+  value: null
+batch_size:
+  computed: 16
+  is_explicitly_specified: true
+  is_hyperparam: null
+  is_meta: null
+  name: batch_size
+  options: []
+  order: 13
+  type: <class 'int'>
+  value: 16
+d_model:
+  computed: 256
+  is_explicitly_specified: true
+  is_hyperparam: null
+  is_meta: null
+  name: d_model
+  options: []
+  order: 5
+  type: <class 'int'>
+  value: 256
+dataloader_shuffle_with_replacement:
+  computed: false
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: dataloader_shuffle_with_replacement
+  options: []
+  order: 12
+  type: <class 'bool'>
+  value: null
+device:
+  computed: cpu
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: device
+  options: []
+  order: 6
+  type: <class 'torch.device'>
+  value: null
+device.cuda_device:
+  computed: 0
+  is_explicitly_specified: false
+  is_hyperparam: false
+  is_meta: null
+  name: cuda_device
+  options: []
+  order: 3
+  type: <class 'int'>
+  value: null
+device.device:
+  computed: cpu
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: device
+  options:
+  - _device
+  order: 0
+  type: <class 'torch.device'>
+  value: null
+device.device_info:
+  computed: CPU
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: device_info
+  options:
+  - _device_info
+  order: 1
+  type: <class 'labml_helpers.device.DeviceInfo'>
+  value: null
+device.use_cuda:
+  computed: true
+  is_explicitly_specified: false
+  is_hyperparam: false
+  is_meta: null
+  name: use_cuda
+  options: []
+  order: 2
+  type: <class 'bool'>
+  value: null
+epochs:
+  computed: 32
+  is_explicitly_specified: true
+  is_hyperparam: null
+  is_meta: null
+  name: epochs
+  options: []
+  order: 21
+  type: <class 'int'>
+  value: 32
+grad_norm_clip:
+  computed: 1.0
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: grad_norm_clip
+  options: []
+  order: 31
+  type: <class 'float'>
+  value: null
+inner_iterations:
+  computed: 10
+  is_explicitly_specified: true
+  is_hyperparam: null
+  is_meta: null
+  name: inner_iterations
+  options: []
+  order: 14
+  type: <class 'int'>
+  value: 10
+is_log_model_activations:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: is_log_model_activations
+  options: []
+  order: -1
+  type: <class 'bool'>
+  value: null
+is_log_model_params_grads:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: is_log_model_params_grads
+  options: []
+  order: -1
+  type: <class 'bool'>
+  value: null
+is_loop_on_interrupt:
+  computed: false
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: true
+  name: is_loop_on_interrupt
+  options: []
+  order: 27
+  type: <class 'bool'>
+  value: null
+is_save_models:
+  computed: true
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: true
+  name: is_save_models
+  options: []
+  order: 23
+  type: <class 'bool'>
+  value: null
+is_track_time:
+  computed: false
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: is_track_time
+  options: []
+  order: 16
+  type: <class 'bool'>
+  value: null
+log_new_line_interval:
+  computed: 1
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: true
+  name: log_new_line_interval
+  options: []
+  order: 24
+  type: <class 'int'>
+  value: null
+log_write_interval:
+  computed: 1
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: true
+  name: log_write_interval
+  options: []
+  order: 25
+  type: <class 'int'>
+  value: null
+loop_count:
+  computed: 32
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: true
+  name: loop_count
+  options:
+  - _data_loop_count
+  order: 20
+  type: <class 'int'>
+  value: null
+loop_step:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: true
+  name: loop_step
+  options: []
+  order: 22
+  type: <class 'int'>
+  value: null
+loss_func:
+  computed: "CrossEntropyLoss(\n  (loss): CrossEntropyLoss()\n)"
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: loss_func
+  options: []
+  order: 30
+  type: <class 'labml_nn.experiments.nlp_autoregression.CrossEntropyLoss'>
+  value: null
+mode:
+  computed: labml_helpers.train_valid.ModeState
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: mode
+  options:
+  - from_type
+  order: 7
+  type: <class 'labml_helpers.train_valid.ModeState'>
+  value: null
+model:
+  computed: "AutoregressiveTransformer(\n  (src_embed): EmbeddingsWithPositionalEncoding(\n\
+    \    (linear): Embedding(65, 256)\n  )\n  (encoder): Encoder(\n    (layers): TypedModuleList(\n\
+    \      (0-5): 6 x TransformerLayer(\n        (self_attn): MultiHeadAttention(\n\
+    \          (query): PrepareForMultiHeadAttention(\n            (linear): Linear(in_features=256,\
+    \ out_features=256, bias=True)\n          )\n          (key): PrepareForMultiHeadAttention(\n\
+    \            (linear): Linear(in_features=256, out_features=256, bias=True)\n\
+    \          )\n          (value): PrepareForMultiHeadAttention(\n            (linear):\
+    \ Linear(in_features=256, out_features=256, bias=True)\n          )\n        \
+    \  (softmax): Softmax(dim=1)\n          (output): Linear(in_features=256, out_features=256,\
+    \ bias=True)\n          (dropout): Dropout(p=0.1, inplace=False)\n        )\n\
+    \        (feed_forward): FeedForward(\n          (layer1): Linear(in_features=256,\
+    \ out_features=1024, bias=True)\n          (layer2): Linear(in_features=1024,\
+    \ out_features=256, bias=True)\n          (dropout): Dropout(p=0.1, inplace=False)\n\
+    \          (activation): ReLU()\n        )\n        (dropout): Dropout(p=0.1,\
+    \ inplace=False)\n        (norm_self_attn): LayerNorm((256,), eps=1e-05, elementwise_affine=True)\n\
+    \        (norm_ff): LayerNorm((256,), eps=1e-05, elementwise_affine=True)\n  \
+    \    )\n    )\n    (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)\n\
+    \  )\n  (generator): Generator(\n    (projection): Linear(in_features=256, out_features=65,\
+    \ bias=True)\n  )\n)"
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: model
+  options:
+  - _model
+  order: 0
+  type: <class 'labml_helpers.module.Module'>
+  value: null
+n_tokens:
+  computed: 65
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: n_tokens
+  options:
+  - _n_tokens
+  order: 2
+  type: <class 'int'>
+  value: null
+optimizer:
+  computed: "Noam (\nParameter Group 0\n    amsgrad: False\n    betas: (0.9, 0.999)\n\
+    \    eps: 1e-08\n    lr: 1.0\n    warmup: 2000\n    weight_decay: 0.0\n)"
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: optimizer
+  options:
+  - _optimizer
+  order: 32
+  type: <class 'torch.optim.adam.Adam'>
+  value: null
+optimizer.amsgrad:
+  computed: false
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: amsgrad
+  options: []
+  order: 9
+  type: <class 'bool'>
+  value: null
+optimizer.betas:
+  computed:
+  - 0.9
+  - 0.999
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: betas
+  options: []
+  order: 3
+  type: typing.Tuple[float, float]
+  value: null
+optimizer.d_model:
+  computed: 256
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: d_model
+  options: []
+  order: 11
+  type: <class 'int'>
+  value: 256
+optimizer.degenerate_to_sgd:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: degenerate_to_sgd
+  options: []
+  order: -1
+  type: <class 'bool'>
+  value: null
+optimizer.eps:
+  computed: 1.0e-08
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: eps
+  options: []
+  order: 4
+  type: <class 'float'>
+  value: null
+optimizer.learning_rate:
+  computed: 1.0
+  is_explicitly_specified: true
+  is_hyperparam: null
+  is_meta: null
+  name: learning_rate
+  options: []
+  order: 2
+  type: <class 'float'>
+  value: 1.0
+optimizer.momentum:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: momentum
+  options: []
+  order: -1
+  type: <class 'float'>
+  value: null
+optimizer.optimized_adam_update:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: optimized_adam_update
+  options: []
+  order: -1
+  type: <class 'bool'>
+  value: null
+optimizer.optimizer:
+  computed: "Noam (\nParameter Group 0\n    amsgrad: False\n    betas: (0.9, 0.999)\n\
+    \    eps: 1e-08\n    lr: 1.0\n    warmup: 2000\n    weight_decay: 0.0\n)"
+  is_explicitly_specified: true
+  is_hyperparam: null
+  is_meta: null
+  name: optimizer
+  options:
+  - SGD
+  - Adam
+  - AdamW
+  - RAdam
+  - AdaBelief
+  - Noam
+  - Sophia
+  - AdamWarmupCosineDecay
+  order: 0
+  type: <class 'torch.optim.adam.Adam'>
+  value: Noam
+optimizer.parameters:
+  computed: <generator object Module.parameters at 0x7f7feeff9eb0>
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: true
+  name: parameters
+  options: []
+  order: 1
+  type: <built-in function any>
+  value: <generator object Module.parameters at 0x7f7feeff9eb0>
+optimizer.rectify:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: rectify
+  options: []
+  order: -1
+  type: <class 'bool'>
+  value: null
+optimizer.rho:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: rho
+  options: []
+  order: -1
+  type: <class 'float'>
+  value: null
+optimizer.total_steps:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: total_steps
+  options: []
+  order: -1
+  type: <class 'int'>
+  value: null
+optimizer.warmup:
+  computed: 2000
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: warmup
+  options: []
+  order: 10
+  type: <class 'int'>
+  value: null
+optimizer.weight_decay:
+  computed: 0.0
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: weight_decay
+  options: []
+  order: 6
+  type: <class 'float'>
+  value: null
+optimizer.weight_decay_absolute:
+  computed: false
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: weight_decay_absolute
+  options: []
+  order: 8
+  type: <class 'bool'>
+  value: null
+optimizer.weight_decay_obj:
+  computed: labml_nn.optimizers.WeightDecay
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: weight_decay_obj
+  options:
+  - L2
+  order: 5
+  type: <class 'labml_nn.optimizers.WeightDecay'>
+  value: null
+optimizer.weight_decouple:
+  computed: true
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: weight_decouple
+  options: []
+  order: 7
+  type: <class 'bool'>
+  value: null
+prompt:
+  computed: 'It is '
+  is_explicitly_specified: true
+  is_hyperparam: null
+  is_meta: null
+  name: prompt
+  options: []
+  order: 28
+  type: <class 'str'>
+  value: 'It is '
+prompt_separator:
+  computed: ''
+  is_explicitly_specified: true
+  is_hyperparam: null
+  is_meta: null
+  name: prompt_separator
+  options: []
+  order: 29
+  type: <class 'str'>
+  value: ''
+save_models_interval:
+  computed: 1
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: true
+  name: save_models_interval
+  options: []
+  order: 26
+  type: <class 'int'>
+  value: null
+seq_len:
+  computed: 512
+  is_explicitly_specified: true
+  is_hyperparam: null
+  is_meta: null
+  name: seq_len
+  options: []
+  order: 11
+  type: <class 'int'>
+  value: 512
+state_modules:
+  computed:
+  - labml_helpers.metrics.accuracy.Accuracy
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: state_modules
+  options: []
+  order: 15
+  type: typing.List[labml_helpers.metrics.StateModule]
+  value:
+  - labml_helpers.metrics.accuracy.Accuracy
+text:
+  computed: 1.00M, 0.11M - /Users/yangwenbo/Desktop/The way to be pro/models/Experiment/data/tiny_shakespeare.txt
+  is_explicitly_specified: true
+  is_hyperparam: null
+  is_meta: null
+  name: text
+  options:
+  - tiny_shakespeare
+  order: 3
+  type: <class 'labml_helpers.datasets.text.TextDataset'>
+  value: tiny_shakespeare
+tokenizer:
+  computed: <function character_tokenizer at 0x7f800be2da60>
+  is_explicitly_specified: true
+  is_hyperparam: null
+  is_meta: null
+  name: tokenizer
+  options:
+  - basic_english
+  - character
+  order: 4
+  type: typing.Callable
+  value: character
+train_loader:
+  computed: torch.utils.data.dataloader.DataLoader
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: train_loader
+  options:
+  - sequential_train_loader
+  - shuffled_train_loader
+  order: 18
+  type: <class 'torch.utils.data.dataloader.DataLoader'>
+  value: null
+trainer:
+  computed: labml_helpers.train_valid.Trainer
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: trainer
+  options:
+  - _default_trainer
+  order: 17
+  type: <class 'labml_helpers.train_valid.Trainer'>
+  value: null
+training_loop:
+  computed: LabTrainingLoop
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: training_loop
+  options:
+  - _loop_configs
+  order: 19
+  type: <class 'labml_helpers.training_loop.TrainingLoop'>
+  value: null
+transformer:
+  computed: labml_nn.transformers.configs.TransformerConfigs
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: transformer
+  options:
+  - Transformer
+  order: 1
+  type: <class 'labml_nn.transformers.configs.TransformerConfigs'>
+  value: null
+transformer.d_model:
+  computed: 256
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: d_model
+  options: []
+  order: 2
+  type: <class 'int'>
+  value: 256
+transformer.decoder:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: decoder
+  options:
+  - default
+  order: -1
+  type: <class 'labml_nn.transformers.models.Decoder'>
+  value: null
+transformer.decoder_attn:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: decoder_attn
+  options:
+  - mha
+  - relative
+  order: -1
+  type: <class 'labml_nn.transformers.mha.MultiHeadAttention'>
+  value: null
+transformer.decoder_layer:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: decoder_layer
+  options:
+  - default
+  order: -1
+  type: <class 'labml_nn.transformers.models.TransformerLayer'>
+  value: null
+transformer.decoder_mem_attn:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: decoder_mem_attn
+  options:
+  - mha
+  - relative
+  order: -1
+  type: <class 'labml_nn.transformers.mha.MultiHeadAttention'>
+  value: null
+transformer.dropout:
+  computed: 0.1
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: dropout
+  options: []
+  order: 5
+  type: <class 'float'>
+  value: null
+transformer.encoder:
+  computed: "Encoder(\n  (layers): TypedModuleList(\n    (0-5): 6 x TransformerLayer(\n\
+    \      (self_attn): MultiHeadAttention(\n        (query): PrepareForMultiHeadAttention(\n\
+    \          (linear): Linear(in_features=256, out_features=256, bias=True)\n  \
+    \      )\n        (key): PrepareForMultiHeadAttention(\n          (linear): Linear(in_features=256,\
+    \ out_features=256, bias=True)\n        )\n        (value): PrepareForMultiHeadAttention(\n\
+    \          (linear): Linear(in_features=256, out_features=256, bias=True)\n  \
+    \      )\n        (softmax): Softmax(dim=1)\n        (output): Linear(in_features=256,\
+    \ out_features=256, bias=True)\n        (dropout): Dropout(p=0.1, inplace=False)\n\
+    \      )\n      (feed_forward): FeedForward(\n        (layer1): Linear(in_features=256,\
+    \ out_features=1024, bias=True)\n        (layer2): Linear(in_features=1024, out_features=256,\
+    \ bias=True)\n        (dropout): Dropout(p=0.1, inplace=False)\n        (activation):\
+    \ ReLU()\n      )\n      (dropout): Dropout(p=0.1, inplace=False)\n      (norm_self_attn):\
+    \ LayerNorm((256,), eps=1e-05, elementwise_affine=True)\n      (norm_ff): LayerNorm((256,),\
+    \ eps=1e-05, elementwise_affine=True)\n    )\n  )\n  (norm): LayerNorm((256,),\
+    \ eps=1e-05, elementwise_affine=True)\n)"
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: encoder
+  options:
+  - default
+  order: 0
+  type: <class 'labml_nn.transformers.models.Encoder'>
+  value: null
+transformer.encoder_attn:
+  computed: "MultiHeadAttention(\n  (query): PrepareForMultiHeadAttention(\n    (linear):\
+    \ Linear(in_features=256, out_features=256, bias=True)\n  )\n  (key): PrepareForMultiHeadAttention(\n\
+    \    (linear): Linear(in_features=256, out_features=256, bias=True)\n  )\n  (value):\
+    \ PrepareForMultiHeadAttention(\n    (linear): Linear(in_features=256, out_features=256,\
+    \ bias=True)\n  )\n  (softmax): Softmax(dim=1)\n  (output): Linear(in_features=256,\
+    \ out_features=256, bias=True)\n  (dropout): Dropout(p=0.1, inplace=False)\n)"
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: encoder_attn
+  options:
+  - mha
+  - relative
+  order: 3
+  type: <class 'labml_nn.transformers.mha.MultiHeadAttention'>
+  value: null
+transformer.encoder_decoder:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: encoder_decoder
+  options:
+  - default
+  order: -1
+  type: <class 'labml_nn.transformers.models.EncoderDecoder'>
+  value: null
+transformer.encoder_layer:
+  computed: "TransformerLayer(\n  (self_attn): MultiHeadAttention(\n    (query): PrepareForMultiHeadAttention(\n\
+    \      (linear): Linear(in_features=256, out_features=256, bias=True)\n    )\n\
+    \    (key): PrepareForMultiHeadAttention(\n      (linear): Linear(in_features=256,\
+    \ out_features=256, bias=True)\n    )\n    (value): PrepareForMultiHeadAttention(\n\
+    \      (linear): Linear(in_features=256, out_features=256, bias=True)\n    )\n\
+    \    (softmax): Softmax(dim=1)\n    (output): Linear(in_features=256, out_features=256,\
+    \ bias=True)\n    (dropout): Dropout(p=0.1, inplace=False)\n  )\n  (feed_forward):\
+    \ FeedForward(\n    (layer1): Linear(in_features=256, out_features=1024, bias=True)\n\
+    \    (layer2): Linear(in_features=1024, out_features=256, bias=True)\n    (dropout):\
+    \ Dropout(p=0.1, inplace=False)\n    (activation): ReLU()\n  )\n  (dropout): Dropout(p=0.1,\
+    \ inplace=False)\n  (norm_self_attn): LayerNorm((256,), eps=1e-05, elementwise_affine=True)\n\
+    \  (norm_ff): LayerNorm((256,), eps=1e-05, elementwise_affine=True)\n)"
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: encoder_layer
+  options:
+  - default
+  order: 1
+  type: <class 'labml_nn.transformers.models.TransformerLayer'>
+  value: null
+transformer.ffn:
+  computed: labml_nn.transformers.configs.FeedForwardConfigs
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: ffn
+  options:
+  - default
+  order: 6
+  type: <class 'labml_nn.transformers.configs.FeedForwardConfigs'>
+  value: null
+transformer.ffn.activation:
+  computed: ReLU()
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: activation
+  options:
+  - ReLU
+  - GELU
+  order: 4
+  type: <class 'torch.nn.modules.module.Module'>
+  value: null
+transformer.ffn.bias1:
+  computed: true
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: bias1
+  options: []
+  order: 6
+  type: <class 'bool'>
+  value: null
+transformer.ffn.bias2:
+  computed: true
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: bias2
+  options: []
+  order: 7
+  type: <class 'bool'>
+  value: null
+transformer.ffn.bias_gate:
+  computed: false
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: bias_gate
+  options: []
+  order: 8
+  type: <class 'bool'>
+  value: null
+transformer.ffn.d_ff:
+  computed: 1024
+  is_explicitly_specified: true
+  is_hyperparam: null
+  is_meta: null
+  name: d_ff
+  options: []
+  order: 2
+  type: <class 'int'>
+  value: 1024
+transformer.ffn.d_model:
+  computed: 256
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: d_model
+  options: []
+  order: 1
+  type: <class 'int'>
+  value: null
+transformer.ffn.dropout:
+  computed: 0.1
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: dropout
+  options: []
+  order: 3
+  type: <class 'float'>
+  value: null
+transformer.ffn.ffn:
+  computed: "FeedForward(\n  (layer1): Linear(in_features=256, out_features=1024,\
+    \ bias=True)\n  (layer2): Linear(in_features=1024, out_features=256, bias=True)\n\
+    \  (dropout): Dropout(p=0.1, inplace=False)\n  (activation): ReLU()\n)"
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: ffn
+  options:
+  - default
+  order: 0
+  type: <class 'labml_nn.transformers.feed_forward.FeedForward'>
+  value: null
+transformer.ffn.glu_variant:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: glu_variant
+  options:
+  - GLU
+  - Bilinear
+  - ReGLU
+  - GEGLU
+  - SwiGLU
+  order: -1
+  type: <class 'str'>
+  value: null
+transformer.ffn.is_gated:
+  computed: false
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: is_gated
+  options: []
+  order: 5
+  type: <class 'bool'>
+  value: null
+transformer.generator:
+  computed: "Generator(\n  (projection): Linear(in_features=256, out_features=65,\
+    \ bias=True)\n)"
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: generator
+  options:
+  - default
+  order: 10
+  type: <class 'labml_nn.transformers.models.Generator'>
+  value: null
+transformer.n_heads:
+  computed: 16
+  is_explicitly_specified: true
+  is_hyperparam: null
+  is_meta: null
+  name: n_heads
+  options: []
+  order: 4
+  type: <class 'int'>
+  value: 16
+transformer.n_layers:
+  computed: 6
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: n_layers
+  options: []
+  order: 7
+  type: <class 'int'>
+  value: null
+transformer.n_src_vocab:
+  computed: 65
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: n_src_vocab
+  options: []
+  order: 9
+  type: <class 'int'>
+  value: 65
+transformer.n_tgt_vocab:
+  computed: 65
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: n_tgt_vocab
+  options: []
+  order: 11
+  type: <class 'int'>
+  value: 65
+transformer.src_embed:
+  computed: "EmbeddingsWithPositionalEncoding(\n  (linear): Embedding(65, 256)\n)"
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: src_embed
+  options:
+  - fixed_pos
+  - learned_pos
+  - no_pos
+  order: 8
+  type: <class 'labml_helpers.module.Module'>
+  value: null
+transformer.tgt_embed:
+  computed: null
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: tgt_embed
+  options:
+  - fixed_pos
+  - learned_pos
+  - no_pos
+  order: -1
+  type: <class 'labml_helpers.module.Module'>
+  value: null
+valid_loader:
+  computed: torch.utils.data.dataloader.DataLoader
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: valid_loader
+  options:
+  - sequential_valid_loader
+  - shuffled_valid_loader
+  order: 10
+  type: <class 'torch.utils.data.dataloader.DataLoader'>
+  value: null
+validator:
+  computed: labml_helpers.train_valid.Trainer
+  is_explicitly_specified: false
+  is_hyperparam: null
+  is_meta: null
+  name: validator
+  options:
+  - _default_validator
+  order: 9
+  type: <class 'labml_helpers.train_valid.Trainer'>
+  value: null

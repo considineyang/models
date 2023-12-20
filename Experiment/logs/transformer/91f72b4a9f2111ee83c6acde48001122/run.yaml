@@ -1,0 +1,18 @@
+comment: ''
+commit: unknown
+commit_message: ''
+distributed_rank: 0
+distributed_world_size: 0
+is_dirty: false
+load_run: null
+name: transformer
+notes: ''
+python_file: /Users/yangwenbo/Desktop/The way to be pro/models/Experiment/Auto-Regressive
+  model.py
+repo_remotes: []
+start_step: 0
+tags:
+- transformer
+trial_date: '2023-12-20'
+trial_time: '18:21:42'
+uuid: 91f72b4a9f2111ee83c6acde48001122
