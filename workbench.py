@@ -1,5 +1,5 @@
 import torch 
-
+import math
 
 x = torch.tensor([[1, 2],
                 [3, 4],
@@ -11,3 +11,7 @@ x = x.unsqueeze(-1)
 
 print(x)
 print(x.shape)
+
+d = math.log(10000)
+
+print(d)
