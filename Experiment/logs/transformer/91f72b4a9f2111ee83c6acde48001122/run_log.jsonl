@@ -1,1 +1,0 @@
-{"status": "crashed", "rank": 0, "details": "\"log_softmax_lastdim_kernel_impl\" not implemented for 'Long'", "time": 1703067735.352364}
